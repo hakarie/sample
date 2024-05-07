@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback form</title>
+<link href='https://fonts.googleapis.com/css?family=Madimi One' rel='stylesheet'>
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+<button onclick="window.location.href = 'astronomy.html' "> Go Back </button>
+<center><h1>Feedback</h1></center>
+<div class="form-container">
+<form name="feedback" method="post" onsubmit="return form()">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" size="40" autocomplete="off" required><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" size="40" autocomplete="off" required><br>
+  <p>Did you already know about Black Holes?</p>
+  <input type="radio" id="yes" name="q" value="Yes" required>
+  <label for="yes">Yes</label><br>
+  <input type="radio" id="no" name="q" value="No" required>
+  <label for="no">No</label><br>
+  <p>Select the topics you are familiar with:</p>
+  <input type="checkbox" id="1" name="1" value="Black Hole">
+  <label for="1">Black Hole</label><br>
+  <input type="checkbox" id="2" name="2" value="Big Bang Theory">
+  <label for="2">Big Bang Theory</label><br>
+  <input type="checkbox" id="3" name="3" value="Star Formation">
+  <label for="3">Star Formation</label><br>
+  <input type="checkbox" id="4" name="4" value="Solar System">
+  <label for="4">Solar System</label><br><br>
+  <label for="f">Write your feedback</label><br>
+  <textarea name="feedback" id="f" rows="10" cols="40"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+<script>
+function ValidateEmail() {
+  const emailInput = document.getElementById("email");
+  const emailValue = emailInput.value.trim();
+  const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (regex.test(emailValue)) {
+    return true;
+  }
+  alert("Invalid Email");
+  return false;
+}
+
+function ValidateName() {
+  const nameInput = document.getElementById("name");
+  const nameValue = nameInput.value.trim();
+  const regex = /^[a-zA-Z\s]+$/;
+  if (regex.test(nameValue)) {
+    return true;
+  }
+  alert("Invalid Name");
+  return false;
+}
+
+function form() {
+  if (ValidateEmail() && ValidateName()) {
+    window.location.href = "submit.html";
+    return true;
+  }
+  else{
+    return false;
+  }
+}
+</script>
+</body>
+</html>

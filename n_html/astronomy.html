@@ -1,0 +1,48 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>Astronomy</title>
+		<link href='https://fonts.googleapis.com/css?family=Kdam Thmor Pro' rel='stylesheet'>
+		<style>
+			.container {
+  			     width:1000px;
+ 		 	     overflow:auto;}
+			.container div { 
+  			     float:left;
+			     padding-right: 40px;}
+			body{
+			     background-color:  #1a1a1a;
+			     margin:auto;
+			     color:white;
+			     font-family:Kdam Thmor Pro}
+			h1 {
+			     text-align:center;
+			     font-size:60px}
+			a{
+			     color:green;}
+		</style>
+		<script src="big_small.js"></script>
+	</head>
+	<body>
+		<center><div><h1>ASTRONOMY</h1></div>
+		<div class="container">
+			<div>
+				<a href="frames.html" target="_top"><img src="bhole.jpg"  width="300px" height="180px" onmouseover="imgbig(this)" onmouseout="imgsmall(this)"></a>
+				<br><p>BLACK HOLE</p>
+			</div>
+			<div>
+				<a href="wormhole.html" target="_top"><img src="wormhole2.jpg" width="300px" height="180px"onmouseover="imgbig(this)" onmouseout="imgsmall(this)"></a>
+				<br><p>WORMHOLE</p>
+			</div>
+		</div>
+		<h2>JAVASCRIPT EXERCISES</h2>
+		<div style="width:200px;margin:auto">
+			<ul>
+				<li><a href="javascript_EX_1.html" onmouseover="big(this)" onmouseout="small(this)" >javascript exercise 1</a></li>
+				<li><a href="javascript_EX_2.html" onmouseover="big(this)" onmouseout="small(this)" >javascript exercise 2</a></li>
+				<li><a href="calc.html" onmouseover="big(this)" onmouseout="small(this)" >javascript exercise 3</a></li>
+			</ul>
+		</div>
+		<a href ="form.html" target="_parent" onmouseover="big(this)" onmouseout="small(this)" >Feedback form</a>
+	</body>
+</html>

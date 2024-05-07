@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Max</title>
+	</head>
+	<body>
+		<h1>TO FIND THE LARGEST NUMBER IN A GIVEN ARRAY</h1>
+		<p id="p1"></p>
+		<p id="p2"></p>
+		<script>
+			let arr=[];
+			for(let i=0;i<10;i++){
+				arr[i]=Math.floor(Math.random() * 101);
+			}
+			document.getElementById("p1").innerHTML="Array =  "+arr.toString();
+			let max=arr[0];
+			function Max(arr){
+				for(let i of arr){
+					if(max<i){
+						max=i;
+					}
+				}
+				return max;
+			}
+			max=Max(arr);
+			document.getElementById("p2").innerHTML="Largest Number in the Array is "+max;
+		</script>
+	</body>
+</html>

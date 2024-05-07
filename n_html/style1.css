@@ -1,0 +1,43 @@
+body {
+	background-color: gold; 
+	font-family: Kdam Thmor Pro;}
+
+#d1 {
+	background-color:black;
+	color:white;}
+#d2,#d3 {
+	margin:auto; 
+	width:1000px}
+#d4 {
+  background-color: goldenrod;
+  width: 300px;
+  border: 5px solid black;
+  padding: 20px;
+  margin: auto;
+  border-radius:20px;
+  float:right;
+}
+h1 {
+	text-align:center;
+	font-size:60px}
+p{
+	width:1000px;
+	font-size:20px;}
+table{
+	background-color:black; 
+	color:white; 
+	border-color:white; 
+	border:5px solid white; 
+	border-collapse:collapse;}
+th,td {
+	padding:5px;}
+a:visited{color:teal}
+a:hover{color:blue}
+a:active{color:red}
+button {
+	background-color:black;
+	color:white;
+	border-radius: 5px;}
+button:hover {
+	background-color:goldenrod; 
+	color:black}

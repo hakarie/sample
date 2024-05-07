@@ -1,0 +1,37 @@
+.form-container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  border:thin;
+  border:solid;
+  width:30% ;
+  margin:auto;
+  background-color:teal;
+  border-radius:50px;
+  color:gold;	
+}
+.form-container1{
+  display: grid;
+  place-items: center;
+  min-height: 100px;
+  border:thin;
+  border:solid;
+  width:30% ;
+  margin:auto;
+  background-color:teal;
+  border-radius:25px;
+  color:gold;}
+button {
+	background-color:black;
+	color:white;
+	border-radius: 5px;}
+button:hover {
+	background-color:#045D5D; 
+	color:black}
+
+body{background-image: url('bhole.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  font-family:Madimi One}
+h1{color:white}

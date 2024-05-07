@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Inventory</title>
+	</head>
+	<body>
+		<h1>To Create an object named inventory to store product information. Each product should have properties like name, price, and quantity. 
+		Add a method to inventory that allows adding new products and another method to display all products with their details</h1>
+  		<div id="d1">
+    			<pre id="output"></pre>
+  		</div>
+  		<script>
+			let i=0;
+    			const Inventory = {
+      				addProduct(name, price, quantity) {
+					i++;
+        					return {
+          						name : name,
+          						price : price,
+          						quantity : quantity,
+						counter : i,
+          						displayProducts() {
+          	  						const output = `Product ${this.counter}\nName : ${this.name}\nPrice: ₹${this.price.toFixed(2)}\nQuantity: ${this.quantity}\n`;
+            							const para = document.createElement("pre");
+            							const node = document.createTextNode(output);
+            							para.appendChild(node);
+            							document.getElementById("output").appendChild(para);
+          						}
+        					};
+      				},
+
+	      			products: [],
+      				addInventoryItem(name, price, quantity) {
+        					this.products.push(this.addProduct(name, price, quantity));
+      				}
+    			};
+
+    			Inventory.addInventoryItem("Pen", 10, 3);
+    			Inventory.addInventoryItem("Scale", 5, 2);
+			Inventory.addInventoryItem("Eraser", 3, 5);
+    			for (let product of Inventory.products) {
+      				product.displayProducts();
+    			}
+  		</script>
+</body>
+</html>
